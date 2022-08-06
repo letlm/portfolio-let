@@ -45,20 +45,21 @@
 // }
 
 // export default Themes;
-import { DefaultTheme, CustomTheme } from "styled-components";
-import dark from "./dark";
-import light from "./light";
+import { DefaultTheme, CustomTheme } from 'styled-components';
+// eslint-disable-next-line import/no-unresolved
+import dark from './dark';
+import light from './light';
 
 const defaultTheme = {
-    fontSizes: {
-        small: "16px",
-        medium: "18px",
-        large: "20px",
-    },
+  fontSizes: {
+    small: '16px',
+    medium: '18px',
+    large: '20px',
+  },
 };
 
 function combineTheme(theme: CustomTheme): DefaultTheme {
-    return { ...defaultTheme, ...theme };
+  return { ...defaultTheme, ...theme };
 }
 
 export { combineTheme, dark, light };
