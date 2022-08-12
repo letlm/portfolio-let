@@ -48,6 +48,7 @@ export default createGlobalStyle`
         width: 100%;
         margin: 0 auto;
         max-width: 85rem;
+        min-width: 300px;
         padding: 0 1 rem;
 
         @media (max-width: 1450px) {
@@ -59,7 +60,7 @@ export default createGlobalStyle`
         }
 
         @media (max-width: 700px) {
-            max-width: 0 2rem;
-        }
+            max-width: 100%;
+        } 
     }
 `;

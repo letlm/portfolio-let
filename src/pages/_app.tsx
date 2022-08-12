@@ -5,6 +5,7 @@ import { combineTheme, dark, light } from '../styles/themes';
 import Switch from 'react-switch';
 import Lua from '../assets/Lua.png';
 import Sol from '../assets/Sol.png';
+import Image from 'next/image';
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState<DefaultTheme>(combineTheme(dark));
@@ -15,7 +16,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Switch checked={theme.title === 'light'} onChange={toggleTheme} />
+      <button onClick={toggleTheme}>
+        <Image src={theme.title === 'light' ? Lua : Sol} />
+      </button>
+      {/* <Switch checked={theme.title === 'light'} onChange={toggleTheme} /> */}
       <Component {...pageProps} />
     </ThemeProvider>
   );

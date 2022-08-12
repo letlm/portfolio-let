@@ -3,30 +3,55 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 100%;
   display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
+  height: 100vh;
+  flex-direction: column;
 
-  .image {
-    width: 40%;
+  .container-line {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    height: 89vh;
     align-items: center;
+    justify-content: center;
 
-    .img-leticia {
-      border-radius: 50em;
-      border: 80px solid #000000;
+    .image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img-leticia {
+        border-radius: 50em;
+        border: 80px solid #000000;
+      }
+    }
+
+    .about {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: start;
     }
   }
 
-  .about {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: start;
+  @media (max-width: 700px) {
+    .container-line {
+      flex-direction: column;
+
+      .image {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .about {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+    }
   }
 `;
 
@@ -177,4 +202,29 @@ export const TextContainer = styled.section`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+
+    h3,
+    p,
+    .buttons,
+    .icons {
+      width: 100%;
+      justify-content: center;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+`;
+
+export const Line = styled.div`
+  height: 2px;
+  width: 100%;
+  /* display: flex;
+  justify-content: flex-start; */
+  background-color: ${({ theme }) => theme.colors.detailsThree};
 `;
