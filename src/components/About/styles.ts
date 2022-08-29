@@ -1,11 +1,22 @@
-import { prependOnceListener } from 'process';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
+const imageMotion = keyframes`
+0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+`;
 export const Container = styled.section`
   width: 100%;
   display: flex;
   height: 100vh;
   flex-direction: column;
+  margin-bottom: -50px;
 
   .container-line {
     display: flex;
@@ -21,8 +32,9 @@ export const Container = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-
-      .img-leticia {
+      /* animation: ${imageMotion} 1s ease 0s 1 normal forwards; */
+      transition: ease-in 0.15;
+      */ .img-leticia {
         border-radius: 50em;
         border: 80px solid #000000;
       }

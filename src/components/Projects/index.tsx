@@ -7,8 +7,8 @@ import { Container } from './styles';
 export function Projects() {
   return (
     <Container>
+      <h1>Alguns dos projetos desenvolvidos</h1>
       <div>
-        <h1>Alguns dos projetos desenvolvidos</h1>
         <button type="button">
           <Link href="/projects">
             <a>Ver todos</a>

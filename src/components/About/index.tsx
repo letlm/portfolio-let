@@ -10,17 +10,20 @@ export function About() {
   const Github = 'https://github.com/letlm';
   const Codewars = 'https://www.codewars.com/users/letlm';
   const Linkedin = 'https://www.linkedin.com/in/leticia-leal-moreira/';
+
   return (
     <Container>
       <div className="container-line">
         <div className="image">
-          <Image
-            src={Leticia}
-            alt="Letícia"
-            className="img-leticia"
-            width={'300px'}
-            height={'300px'}
-          />
+          <div>
+            <Image
+              src={Leticia}
+              alt="Letícia"
+              className="img-leticia"
+              width={'300px'}
+              height={'300px'}
+            />
+          </div>
         </div>
         <div className="about">
           <TextContainer>
