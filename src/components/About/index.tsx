@@ -5,12 +5,18 @@ import Typical from 'react-typical';
 import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 import { SiCodewars } from 'react-icons/si';
 import Link from 'next/link';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
-export function About() {
+function About() {
   const Github = 'https://github.com/letlm';
   const Codewars = 'https://www.codewars.com/users/letlm';
   const Linkedin = 'https://www.linkedin.com/in/leticia-leal-moreira/';
-
+  const handleScroll = () => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <Container>
       <div className="container-line">
@@ -79,7 +85,12 @@ export function About() {
           </TextContainer>
         </div>
       </div>
-      <Line />
+      <Line id="resume" />
+      <button type="button" onClick={handleScroll} className="return">
+        <BsFillArrowUpCircleFill size={30} />
+      </button>
     </Container>
   );
 }
+
+export default About;

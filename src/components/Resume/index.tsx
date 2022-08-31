@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-export function Resume() {
+function Resume() {
   return (
     <Container>
-      <h2>Breve resumo</h2>
+      <h2>Breve resumo...</h2>
       <div className="resume">
         <span>
           Desenvolvedora Front End, estudante de Desenvolvimento Web Full Stack
@@ -106,7 +106,7 @@ export function Resume() {
 
           <img
             width={60}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
             alt="Visual Studio Code"
           />
           <img
@@ -160,6 +160,9 @@ export function Resume() {
           />
         </div>
       </div>
+      <span id="projects"></span>
     </Container>
   );
 }
+
+export default Resume;

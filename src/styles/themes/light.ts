@@ -15,5 +15,7 @@ export default {
     textTwo: '#212121cc',
     textThree: '#212121b3',
     textFour: '#21212180',
+    inverse: '#000000',
+    reverse: '#ffffff',
   },
 };

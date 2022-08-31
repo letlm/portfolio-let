@@ -1,12 +1,20 @@
 import FormContact from './FormContact';
 import { Container } from './styles';
+import Image from '../../assets/Contact.svg';
 
-export function Contact() {
+function Contact() {
   return (
     <Container>
-      <h1>Contact</h1>
-      <span>Entre em contato como pelo formulário abaixo!</span>
-      <FormContact />
+      <h2>Entre em contato comigo...</h2>
+      <span>Me envie uma mensagem pelo formulário!</span>
+      <div>
+        <div className="image">
+          <Image className="email" />
+        </div>
+        <FormContact />
+      </div>
     </Container>
   );
 }
+
+export default Contact;

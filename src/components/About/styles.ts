@@ -66,6 +66,24 @@ export const Container = styled.section`
       }
     }
   }
+
+  .return {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    color: ${({ theme }) => theme.colors.textOne};
+    z-index: 2000;
+    transition: 0.5s;
+
+    :hover {
+      transform: scale(1.6);
+      color: ${({ theme }) => theme.colors.detailsOne};
+    }
+  }
 `;
 
 export const TextContainer = styled.section`
@@ -207,6 +225,7 @@ export const TextContainer = styled.section`
       color: ${({ theme }) => theme.colors.textOne};
       background-color: transparent;
       margin-right: 10px;
+      transition: 0.5s;
     }
 
     .btnHome a {
@@ -235,9 +254,9 @@ export const TextContainer = styled.section`
 `;
 
 export const Line = styled.div`
-  height: 2px;
+  height: 0.5px;
   width: 100%;
   /* display: flex;
   justify-content: flex-start; */
-  background-color: ${({ theme }) => theme.colors.detailsThree};
+  background-color: ${({ theme }) => theme.colors.detailsFive};
 `;

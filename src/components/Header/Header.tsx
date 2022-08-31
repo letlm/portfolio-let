@@ -3,14 +3,17 @@ import { NavLink } from './NavLink';
 
 import { Container } from './styles';
 
-export function Header() {
+function Header() {
   return (
     <Container>
       <ul>
-        <NavLink title="Home" path="/" />
-        <NavLink title="Projects" path="/projects" />
-        <NavLink title="Contato" path="/contact" />
+        <NavLink title="Início" path="/" />
+        <NavLink title="Resumo" path="#resume" />
+        <NavLink title="Projetos" path="#projects" />
+        <NavLink title="Contato" path="#contact" />
       </ul>
     </Container>
   );
 }
+
+export default Header;

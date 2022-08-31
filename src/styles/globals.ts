@@ -63,4 +63,14 @@ export default createGlobalStyle`
             max-width: 100%;
         } 
     }
+
+    .mode-view{
+        margin-top: 5px;
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        right: 0;
+        z-index: 2000;
+        width: 50px;
+    }
 `;

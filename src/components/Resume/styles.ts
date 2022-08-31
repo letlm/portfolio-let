@@ -36,7 +36,7 @@ export const Container = styled.div`
   .resume {
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 2px solid ${({ theme }) => theme.colors.detailsSix};
+    border: 2px solid ${({ theme }) => theme.colors.detailsFour};
     background-color: ${({ theme }) => theme.colors.detailsSix};
     height: 80px;
     display: flex;
@@ -47,7 +47,7 @@ export const Container = styled.div`
       width: 90%;
       font-size: 1rem;
       font-weight: 600;
-      color: ${({ theme }) => theme.colors.textOne};
+      color: ${({ theme }) => theme.colors.textTwo};
     }
   }
 
@@ -61,7 +61,7 @@ export const Container = styled.div`
     height: 300px;
     background-color: ${({ theme }) => theme.colors.backgroundThree};
     border-radius: 5px;
-    border: 1px solid ${({ theme }) => theme.colors.detailsSix};
+    border: 1px solid ${({ theme }) => theme.colors.detailsFour};
     transition: all 0.2s;
     box-shadow: 12px 12px 2px 1px ${({ theme }) => theme.colors.detailsSix};
     animation: ${cardAnimation} 3s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal
@@ -75,18 +75,34 @@ export const Container = styled.div`
   }
 
   .card:hover {
-    box-shadow: -12px 12px 2px -1px ${({ theme }) => theme.colors.detailsSix};
+    box-shadow: -12px 12px 2px -1px ${({ theme }) => theme.colors.detailsFour};
   }
 
   .techs {
+    margin-top: 40px;
+    height: 250px;
     display: flex;
-    justify-content: center;
+    border-radius: 4px;
+    justify-content: space-around;
     align-items: center;
+    background-color: ${({ theme }) => theme.colors.backgroundThree};
+    border: 2px solid ${({ theme }) => theme.colors.detailsThree};
+
     span {
+      width: 30%;
       text-align: center;
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: ${({ theme }) => theme.colors.textThree};
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.textTwo};
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .imgs {
+      display: flex;
+      width: 50%;
+      gap: 1vh;
+      flex-wrap: wrap;
+      flex-direction: row;
     }
   }
 `;
