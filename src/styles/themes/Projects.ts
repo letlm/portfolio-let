@@ -6,12 +6,11 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  > main {
+  main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 5rem;
-    /* flex-direction: column; */
     gap: 1rem;
   }
 `;

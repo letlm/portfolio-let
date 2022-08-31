@@ -9,7 +9,7 @@ interface IPageProjectsProps {
   description: string;
 }
 
-export function PageProjects({
+function PageProjects({
   title,
   tags,
   img,
@@ -43,3 +43,5 @@ export function PageProjects({
     </Container>
   );
 }
+
+export default PageProjects;

@@ -90,103 +90,79 @@ export const projects = [
       "Inspirado na 'Magic 8-ball' mas com uma pegada no universo Harry Potter. Foi realizado com Programação Orientada a Objetos(POO). O usuário digita uma pergunta e o Selector Hat responderá!",
   },
 
-  //   {
-  //     id: 10,
-  //     title: 'Blog M2',
-  //     img: 'https://i.imgur.com/wj4HHlo.png',
-  //     demo: 'https://psychic-invention-165e1ac8.pages.github.io/',
-  //     repo: 'https://github.com/letlm/blog-JS',
-  //     html: 'https://i.imgur.com/NX3u7e4.png',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'Fazendo o consumo de uma API, é possível fazer o cadastro e login do usuário. Após logado, é possível fazer posts no blog, excluir ou editar os próprios posts e ainda ler os posts de outros usuários.',
-  //   },
-  //   {
-  //     id: 11,
-  //     title: 'Quadro de Medalhas',
-  //     img: 'https://i.imgur.com/D9yd8cq.png',
-  //     demo: 'https://quadro-de-medalhas.vercel.app/',
-  //     repo: 'https://github.com/letlm/quadro-de-medalhas-JS',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'Quadro que exibe a quantidade de medalhas dos 15 países que mais tiveram vitórias nas competições das Olimpíadas. Para obter os dados foi utilizada uma api e para contruir a tabela o DOM.',
-  //   },
-  //   {
-  //     id: 12,
-  //     title: 'Torre de Hanoi',
-  //     img: 'https://i.imgur.com/T3tgUK3.png',
-  //     demo: 'https://torre-de-hanoi-letlm.vercel.app/',
-  //     repo: 'https://github.com/letlm/torre-de-hanoi-JS',
-  //     html: 'https://i.imgur.com/NX3u7e4.png',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       "O objetivo consistia em reproduzir o quebra-cabeças 'Torre de Hanoi', no qual os discos e torres foram criados com o DOM.",
-  //   },
-  //   {
-  //     id: 13,
-  //     title: 'Lista de Produtos',
-  //     img: 'https://i.imgur.com/WIKnQ0T.png',
-  //     demo: 'https://lista-de-produtos-letlm.vercel.app/',
-  //     repo: 'https://github.com/letlm/lista-de-produtos-JS',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       "Aplicação simulando um 'supermercado', sendo possível adicionar os produtos no carrinho, bem como é possível fazer a busca por nome ou categoria.",
-  //   },
-  //   {
-  //     id: 14,
-  //     title: 'Contador de Frequência',
-  //     img: 'https://i.imgur.com/UF2mhax.png',
-  //     demo: 'https://contador-de-frequencia.vercel.app/',
-  //     repo: 'https://github.com/letlm/contador-de-frequencia-JS',
-  //     html: 'https://i.imgur.com/NX3u7e4.png',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'A aplicação registra a frequência de cada uma das letras e palavras usadas em um determinado texto/palavra que o usuário digitar.',
-  //   },
-  //   {
-  //     id: 15,
-  //     title: 'Rolando Dados',
-  //     img: 'https://i.imgur.com/pW1iwDg.png',
-  //     demo: 'https://rolando-dados.vercel.app/',
-  //     repo: 'https://github.com/letlm/rolando-dados-JS',
-  //     js: 'https://i.imgur.com/TLXXHeQ.png',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'A aplicação simula a rolagem de dois dados várias vezes, no qual é registrado a frequência de cada resultado e ainda é encontrado um gráfico com as frequências obtidas.',
-  //   },
-  //   {
-  //     id: 16,
-  //     title: 'KenzieFlix',
-  //     img: 'https://i.imgur.com/4qbofIP.png',
-  //     demo: 'https://kenzieflix-letlm.vercel.app/',
-  //     repo: 'https://github.com/letlm/kenzieflix-CSS',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'O objetivo era a estilização de um layout de uma plataforma de streaming utilizando CSS com conceitos de flex-box. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
-  //   },
-  //   {
-  //     id: 17,
-  //     title: 'Menu Restaurante',
-  //     img: 'https://i.imgur.com/nOtBS6T.png',
-  //     demo: 'https://menu-restaurante.vercel.app/',
-  //     repo: 'https://github.com/letlm/menu-restaurante-CSS',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'O objetivo era apenas a estilização de um Menu de Restaurante de duas formas diferentes utilizando CSS. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
-  //   },
-  //   {
-  //     id: 18,
-  //     title: 'Currículo Guru',
-  //     img: 'https://i.imgur.com/jFvFlqG.png',
-  //     demo: 'https://curriculo-guru.vercel.app/',
-  //     repo: 'https://github.com/letlm/curriculo-guru-CSS',
-  //     css: 'https://i.imgur.com/RF1a25i.png',
-  //     description:
-  //       'O objetivo era apenas a estilização de um currículo Guru utilizando CSS. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
-  //   },
+  {
+    id: 10,
+    title: 'Blog M2',
+    img: 'https://i.imgur.com/wj4HHlo.png',
+    demo: 'https://psychic-invention-165e1ac8.pages.github.io/',
+    repo: 'https://github.com/letlm/blog-JS',
+
+    tags: '#javascript, #css3, #dom',
+
+    description:
+      'Fazendo o consumo de uma API, é possível fazer o cadastro e login do usuário. Após logado, é possível fazer posts no blog, excluir ou editar os próprios posts e ainda ler os posts de outros usuários.',
+  },
+  {
+    id: 11,
+    title: 'Quadro de Medalhas',
+    img: 'https://i.imgur.com/D9yd8cq.png',
+    demo: 'https://quadro-de-medalhas.vercel.app/',
+    repo: 'https://github.com/letlm/quadro-de-medalhas-JS',
+    tags: '#javascript, #css3, #dom',
+
+    description:
+      'Quadro que exibe a quantidade de medalhas dos 15 países que mais tiveram vitórias nas competições das Olimpíadas. Para obter os dados foi utilizada uma api e para contruir a tabela o DOM.',
+  },
+  {
+    id: 12,
+    title: 'Lista de Produtos',
+    img: 'https://i.imgur.com/WIKnQ0T.png',
+    demo: 'https://lista-de-produtos-letlm.vercel.app/',
+    repo: 'https://github.com/letlm/lista-de-produtos-JS',
+    tags: ' #javascript, #css3',
+    js: 'https://i.imgur.com/TLXXHeQ.png',
+    css: 'https://i.imgur.com/RF1a25i.png',
+    description:
+      "Aplicação simulando um 'supermercado', sendo possível adicionar os produtos no carrinho, bem como é possível fazer a busca por nome ou categoria.",
+  },
+  {
+    id: 13,
+    title: 'Contador de Frequência',
+    img: 'https://i.imgur.com/UF2mhax.png',
+    demo: 'https://contador-de-frequencia.vercel.app/',
+    repo: 'https://github.com/letlm/contador-de-frequencia-JS',
+    tags: ' #html5, #css3, #javascript',
+    description:
+      'A aplicação registra a frequência de cada uma das letras e palavras usadas em um determinado texto/palavra que o usuário digitar.',
+  },
+  {
+    id: 14,
+    title: 'Rolando Dados',
+    img: 'https://i.imgur.com/pW1iwDg.png',
+    demo: 'https://rolando-dados.vercel.app/',
+    repo: 'https://github.com/letlm/rolando-dados-JS',
+    tags: ' #html5, #css3, #javascript',
+    description:
+      'A aplicação simula a rolagem de dois dados várias vezes, no qual é registrado a frequência de cada resultado e ainda é encontrado um gráfico com as frequências obtidas.',
+  },
+  {
+    id: 15,
+    title: 'KenzieFlix',
+    img: 'https://i.imgur.com/4qbofIP.png',
+    demo: 'https://kenzieflix-letlm.vercel.app/',
+    repo: 'https://github.com/letlm/kenzieflix-CSS',
+    tags: '#css3',
+    description:
+      'O objetivo era a estilização de um layout de uma plataforma de streaming utilizando CSS com conceitos de flex-box. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
+  },
+  {
+    id: 16,
+    title: 'Menu Restaurante',
+    img: 'https://i.imgur.com/nOtBS6T.png',
+    demo: 'https://menu-restaurante.vercel.app/',
+    repo: 'https://github.com/letlm/menu-restaurante-CSS',
+    tags: '#css3',
+    description:
+      'O objetivo era apenas a estilização de um Menu de Restaurante de duas formas diferentes utilizando CSS. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
+  },
 ];

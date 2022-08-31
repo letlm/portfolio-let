@@ -1,12 +1,13 @@
-import { Header } from '../components/Header/Header';
-import { PageProjects } from '../components/PageProjects';
+import PageProjects from '../components/PageProjects';
 import { Container } from '../styles/themes/Projects';
 import { projects } from '../components/PageProjects/projects.db';
-import { Footer } from '../components/Footer';
-export default function Projects() {
+import Footer from '../components/Footer';
+import HeaderProjects from '../components/HeaderProjects/Header';
+
+function Projects() {
   return (
     <Container>
-      <Header />
+      <HeaderProjects />
       <main className="container">
         {projects.map((project, index) => (
           <PageProjects
@@ -24,3 +25,5 @@ export default function Projects() {
     </Container>
   );
 }
+
+export default Projects;

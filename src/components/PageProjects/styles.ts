@@ -14,11 +14,6 @@ const appear = keyframes`
 `;
 
 export const Container = styled.div`
-  /* display: flex;
-
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
   width: 23%;
 `;
 
@@ -26,9 +21,6 @@ export const Context = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   animation: ${appear} 1.5s ease 0s 1 normal forwards;
 
   span {
@@ -44,15 +36,15 @@ export const Projects = styled.div`
   width: 270px;
   border-radius: 8px;
 
-  background-color: transparent;
-  border: 2px solid ${({ theme }) => theme.colors.detailsOne};
+  background-color: ${({ theme }) => theme.colors.detailsSix};
+  border: 2px solid ${({ theme }) => theme.colors.detailsFour};
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 
   :hover {
-    box-shadow: 10px 10px 69px -2px rgb(252, 99, 153);
-    background: ${({ theme }) => theme.colors.detailsOne};
+    box-shadow: 10px 10px 9px -2px rgb(252, 98, 153);
     border: 2px solid ${({ theme }) => theme.colors.detailsOne};
   }
 `;
@@ -77,7 +69,7 @@ export const Figure = styled.figure`
     font-size: 18px;
     font-weight: 600;
 
-    color: ${({ theme }) => theme.colors.detailsOne};
+    color: ${({ theme }) => theme.colors.textOne};
     text-shadow: 8ex;
   }
 
@@ -93,7 +85,7 @@ export const Figure = styled.figure`
     position: relative;
     top: -184px;
     left: 4px;
-    color: var(--black);
+    color: ${({ theme }) => theme.colors.textOne};
     line-height: 20px;
     font-weight: 500;
     display: block;
@@ -121,23 +113,23 @@ export const Figure = styled.figure`
   }
 
   .button {
-    border: 1px solid ${({ theme }) => theme.colors.backgroundTwo};
-    color: ${({ theme }) => theme.colors.textOne};
+    border: 1px solid ${({ theme }) => theme.colors.detailsOne};
+    color: ${({ theme }) => theme.colors.reverse};
     border-radius: 4px;
     width: 100px;
     height: 30px;
     margin-right: 10px;
     font-family: 'Poppins', sans-serif;
-    background: ${({ theme }) => theme.colors.backgroundOne};
+    background: ${({ theme }) => theme.colors.textOne};
     transition: 0.2s;
   }
 
   .button:hover {
-    color: ${({ theme }) => theme.colors.textOne};
+    color: ${({ theme }) => theme.colors.inverse};
     transform: translate(-0.25rem, -0.25rem);
-
-    border: 1px solid ${({ theme }) => theme.colors.textOne};
-    box-shadow: 0.25rem 0.25rem ${({ theme }) => theme.colors.textOne};
+    background: ${({ theme }) => theme.colors.reverse};
+    border: 1px solid ${({ theme }) => theme.colors.reverse};
+    box-shadow: 0.25rem 0.25rem ${({ theme }) => theme.colors.detailsOne};
   }
 
   .button:active {
@@ -146,19 +138,11 @@ export const Figure = styled.figure`
   }
 
   .techsDiv {
+    margin-top: 5px;
     display: flex;
-    width: 130px;
+    width: 100%;
+    height: 25px;
     justify-content: flex-start;
-  }
-
-  .techs {
-    width: 35px;
-    height: 35px;
-    border: none;
-    margin-right: 5px;
-  }
-
-  :hover {
-    color: ${({ theme }) => theme.colors.backgroundOne};
+    color: ${({ theme }) => theme.colors.textTwo};
   }
 `;
