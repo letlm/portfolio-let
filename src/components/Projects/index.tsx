@@ -36,7 +36,7 @@ function Projects() {
       <div className="div">
         <button type="button" className="button">
           <Link href="/projects">
-            <a className="more">Ver todos</a>
+            <a className="more">Ver mais</a>
           </Link>
           <AiOutlineBulb size={20} className="icon" />
         </button>

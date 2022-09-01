@@ -1,23 +1,39 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   h2 {
+    width: 95%;
     font-size: 2rem;
     margin-bottom: 20px;
     color: ${({ theme }) => theme.colors.textOne};
+
+    @media (max-width: 800px) {
+      margin-top: -120px;
+    }
   }
 
   span {
+    width: 95%;
     font-size: 1.2rem;
     color: ${({ theme }) => theme.colors.textThree};
   }
 
   div {
+    width: 95%;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
   }
 
   .image {
@@ -28,6 +44,10 @@ export const Container = styled.div`
       width: 70%;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
     }
   }
 `;
@@ -58,6 +78,12 @@ export const ContainerForm = styled.form`
     &:not(:disabled):hover {
       background-color: ${({ theme }) => theme.colors.detailsThree};
     }
+  }
+
+  @media (max-width: 600px) {
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
   }
 `;
 

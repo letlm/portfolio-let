@@ -6,7 +6,7 @@ function HeaderProjects() {
   return (
     <Container>
       <ul>
-        <NavLink title="Voltar para o início" path="/" />
+        <NavLink title="         Voltar..." path="/" />
       </ul>
     </Container>
   );

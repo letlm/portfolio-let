@@ -28,12 +28,20 @@ const cardAnimation = keyframes`
 
 export const Container = styled.div`
   margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   h2 {
+    width: 95%;
     font-size: 2rem;
     margin-bottom: 20px;
     color: ${({ theme }) => theme.colors.textOne};
   }
+
   .resume {
+    width: 95%;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 2px solid ${({ theme }) => theme.colors.detailsFour};
@@ -57,7 +65,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 95%;
     height: 300px;
     background-color: ${({ theme }) => theme.colors.backgroundThree};
     border-radius: 5px;
@@ -79,6 +87,7 @@ export const Container = styled.div`
   }
 
   .techs {
+    width: 95%;
     margin-top: 40px;
     height: 250px;
     display: flex;
@@ -99,10 +108,73 @@ export const Container = styled.div`
 
     .imgs {
       display: flex;
-      width: 50%;
+      width: 67%;
       gap: 1vh;
       flex-wrap: wrap;
       flex-direction: row;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .resume {
+      width: 95%;
+    }
+
+    .card {
+      width: 95%;
+    }
+
+    .techs {
+      height: 300px;
+      width: 95%;
+      flex-direction: column;
+
+      span {
+        width: 100%;
+
+        font-size: 1rem;
+      }
+
+      .imgs {
+        display: flex;
+        width: 95%;
+        gap: 1vh;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .resume {
+      width: 95%;
+    }
+
+    .card {
+      height: 380px;
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .techs {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .resume {
+      width: 95%;
+    }
+
+    .card {
+      height: 500px;
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .techs {
+      height: 500px;
     }
   }
 `;

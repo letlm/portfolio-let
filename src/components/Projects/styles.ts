@@ -5,30 +5,43 @@ interface ImgProjects {
 }
 
 export const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 
   gap: 5rem;
 
   h2 {
+    width: 95%;
     font-size: 2rem;
     margin-bottom: 20px;
     color: ${({ theme }) => theme.colors.textOne};
+
+    @media (max-width: 600px) {
+      margin-bottom: 0px;
+    }
   }
 
   section {
+    width: 95%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     gap: 4rem;
+
     @media (max-width: 1000px) {
+      margin-top: -50px;
       gap: 2rem;
+    }
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
     }
   }
   .div {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: flex-end;
 
@@ -37,6 +50,11 @@ export const Container = styled.div`
       height: 40px;
       border: none;
       background: none;
+
+      @media (max-width: 600px) {
+        margin-top: -30px;
+        /* margin-bottom: -100px; */
+      }
     }
 
     .button a {
@@ -147,12 +165,16 @@ export const DoneProject = styled.div`
     }
     margin-bottom: 20px;
   }
+
+  @media (max-width: 800px) {
+    height: 350px;
+    width: 300px;
+  }
 `;
 
 export const Project = styled.div<ImgProjects>`
   background: url(${(props) => props.imgUrl}) no-repeat;
   background-size: contain;
-  width: 100%;
   height: 80%;
   border-radius: 8px;
 `;

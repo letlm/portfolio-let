@@ -14,7 +14,7 @@ const appear = keyframes`
 `;
 
 export const Container = styled.div`
-  width: 23%;
+  width: 270px;
 `;
 
 export const Context = styled.div`
@@ -36,8 +36,8 @@ export const Projects = styled.div`
   width: 270px;
   border-radius: 8px;
 
-  background-color: ${({ theme }) => theme.colors.detailsSix};
-  border: 2px solid ${({ theme }) => theme.colors.detailsFour};
+  background-color: ${({ theme }) => theme.colors.detailsFour};
+  /* border: 2px solid ${({ theme }) => theme.colors.detailsFour}; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ export const Projects = styled.div`
 
   :hover {
     box-shadow: 10px 10px 9px -2px rgb(252, 98, 153);
-    border: 2px solid ${({ theme }) => theme.colors.detailsOne};
+    /* border: 2px solid ${({ theme }) => theme.colors.detailsOne}; */
   }
 `;
 

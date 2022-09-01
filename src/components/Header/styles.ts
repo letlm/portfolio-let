@@ -19,6 +19,13 @@ export const Container = styled.header`
     gap: 2rem;
     align-items: center;
   }
+
+  @media (max-width: 400px) {
+    ul {
+      margin-left: 10px;
+      gap: 1rem;
+    }
+  }
 `;
 
 export const NavLinkContainer = styled.li<INavLink>`

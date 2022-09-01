@@ -10,7 +10,9 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin-top: 5rem;
-    gap: 1rem;
+    gap: 1.8rem;
   }
 `;
