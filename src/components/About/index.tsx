@@ -11,6 +11,7 @@ function About() {
   const Github = 'https://github.com/letlm';
   const Codewars = 'https://www.codewars.com/users/letlm';
   const Linkedin = 'https://www.linkedin.com/in/leticia-leal-moreira/';
+
   const handleScroll = () => {
     window.scroll({
       top: 0,
@@ -20,7 +21,13 @@ function About() {
   return (
     <Container>
       <div className="container-line">
-        <div className="image">
+        <div
+          className="image"
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-sine"
+          data-aos-mirror="true"
+        >
           <div>
             <Image
               src={Leticia}
@@ -31,7 +38,13 @@ function About() {
             />
           </div>
         </div>
-        <div className="about">
+        <div
+          className="about"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          // data-aos-easing="ease-in-sine"
+          data-aos-mirror="true"
+        >
           <TextContainer>
             <h3>Letícia Leal Moreira</h3>
             <p>

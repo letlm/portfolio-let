@@ -9,7 +9,7 @@ function Projects() {
     <Container>
       <h2>Alguns dos projetos desenvolvidos...</h2>
 
-      <section>
+      <section data-aos="flip-left" data-aos-duration="1000">
         <DoneProjects
           img="https://i.imgur.com/BMOqmxH.png"
           title="KenzieHub"

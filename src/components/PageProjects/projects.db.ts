@@ -19,6 +19,7 @@ export const projects = [
     description:
       'Gerenciador de gastos no qual é possível cadastrar entradas e despesas, além de possuir a funcionalidade de filtrar os cadastros bem como excluí-los.',
   },
+
   {
     id: 3,
     title: 'BurguerKenzie',
@@ -66,10 +67,19 @@ export const projects = [
     demo: 'https://portfolio-letlm.vercel.app/',
     repo: 'https://github.com/letlm/portfolio',
     tags: '#next.js, #typescrip',
-    description: 'Meu portfólio criado com React JS',
+    description: 'Portfólio inicial criado com React JS',
   },
   {
     id: 8,
+    title: 'Portfólio 2.0',
+    img: 'https://i.imgur.com/Uh8pHof.png',
+    demo: 'https://portfolio-letlm.vercel.app/',
+    repo: 'https://github.com/letlm/portfolio-let',
+    tags: '#next.js, #typescrip',
+    description: 'Portfólio versão 2.0 criado com NextJS e Typescript',
+  },
+  {
+    id: 9,
     title: 'Formulário de Cadastro',
     img: 'https://i.imgur.com/92h3EkY.png',
     demo: 'https://formulario-de-cadastro-letlm.vercel.app/',
@@ -80,7 +90,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: 'Selector Hat',
     img: 'https://i.imgur.com/jfyPE6q.png',
     demo: 'https://selector-hat-letlm.vercel.app/',
@@ -91,7 +101,7 @@ export const projects = [
   },
 
   {
-    id: 10,
+    id: 11,
     title: 'Blog M2',
     img: 'https://i.imgur.com/wj4HHlo.png',
     demo: 'https://psychic-invention-165e1ac8.pages.github.io/',
@@ -103,7 +113,7 @@ export const projects = [
       'Fazendo o consumo de uma API, é possível fazer o cadastro e login do usuário. Após logado, é possível fazer posts no blog, excluir ou editar os próprios posts e ainda ler os posts de outros usuários.',
   },
   {
-    id: 11,
+    id: 12,
     title: 'Quadro de Medalhas',
     img: 'https://i.imgur.com/D9yd8cq.png',
     demo: 'https://quadro-de-medalhas.vercel.app/',
@@ -114,7 +124,7 @@ export const projects = [
       'Quadro que exibe a quantidade de medalhas dos 15 países que mais tiveram vitórias nas competições das Olimpíadas. Para obter os dados foi utilizada uma api e para contruir a tabela o DOM.',
   },
   {
-    id: 12,
+    id: 13,
     title: 'Lista de Produtos',
     img: 'https://i.imgur.com/WIKnQ0T.png',
     demo: 'https://lista-de-produtos-letlm.vercel.app/',
@@ -126,7 +136,7 @@ export const projects = [
       "Aplicação simulando um 'supermercado', sendo possível adicionar os produtos no carrinho, bem como é possível fazer a busca por nome ou categoria.",
   },
   {
-    id: 13,
+    id: 14,
     title: 'Contador de Frequência',
     img: 'https://i.imgur.com/UF2mhax.png',
     demo: 'https://contador-de-frequencia.vercel.app/',
@@ -136,7 +146,7 @@ export const projects = [
       'A aplicação registra a frequência de cada uma das letras e palavras usadas em um determinado texto/palavra que o usuário digitar.',
   },
   {
-    id: 14,
+    id: 15,
     title: 'Rolando Dados',
     img: 'https://i.imgur.com/pW1iwDg.png',
     demo: 'https://rolando-dados.vercel.app/',
@@ -146,7 +156,7 @@ export const projects = [
       'A aplicação simula a rolagem de dois dados várias vezes, no qual é registrado a frequência de cada resultado e ainda é encontrado um gráfico com as frequências obtidas.',
   },
   {
-    id: 15,
+    id: 16,
     title: 'KenzieFlix',
     img: 'https://i.imgur.com/4qbofIP.png',
     demo: 'https://kenzieflix-letlm.vercel.app/',
@@ -156,7 +166,7 @@ export const projects = [
       'O objetivo era a estilização de um layout de uma plataforma de streaming utilizando CSS com conceitos de flex-box. O código HTML já estava pronto, ou seja, não foi feito por mim. Realizei apenas a estilização.',
   },
   {
-    id: 16,
+    id: 17,
     title: 'Menu Restaurante',
     img: 'https://i.imgur.com/nOtBS6T.png',
     demo: 'https://menu-restaurante.vercel.app/',

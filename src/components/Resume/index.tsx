@@ -5,14 +5,19 @@ function Resume() {
     <Container>
       <h2>Breve resumo...</h2>
 
-      <div className="resume">
+      <div
+        className="resume"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+      >
         <span>
           Desenvolvedora Front End, estudante de Desenvolvimento Web Full Stack
           da Kenzie Academy Brasil e professora de Química.
         </span>
       </div>
 
-      <div className="card">
+      <div className="card" data-aos="fade-down" data-aos-duration="1500">
         <p>
           Sempre gostei de desafios e de solucionar problemas, por isso acabei
           escolhendo a Licenciatura em Química como formação, porém não estava
@@ -26,7 +31,12 @@ function Resume() {
         </p>
       </div>
 
-      <div className="techs">
+      <div
+        className="techs"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <span>
           Algumas das tecnologias e ferramentas que tenho conhecimento:
         </span>

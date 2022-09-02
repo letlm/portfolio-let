@@ -8,7 +8,7 @@ function Contact() {
       <h2>Entre em contato comigo...</h2>
       <span>Me envie uma mensagem pelo formulário!</span>
       <div>
-        <div className="image">
+        <div className="image" data-aos="fade-right" data-aos-duration="1000">
           <Image className="email" />
         </div>
         <FormContact />

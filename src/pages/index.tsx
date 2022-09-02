@@ -6,12 +6,13 @@ import Header from '../components/Header/Header';
 import Projects from '../components/Projects';
 import Resume from '../components/Resume';
 import { HomeContainer } from '../styles/themes/Home';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 function Home() {
-  // useEffect(() => {
-  //   Aos.init();
-  // }, []);
+  useEffect(() => {
+    Aos.init({ disable: false });
+  }, []);
 
   return (
     <HomeContainer>
