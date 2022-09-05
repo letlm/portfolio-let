@@ -21,13 +21,7 @@ function About() {
   return (
     <Container>
       <div className="container-line">
-        <div
-          className="image"
-          data-aos="fade-right"
-          data-aos-offset="500"
-          data-aos-easing="ease-in-sine"
-          data-aos-mirror="true"
-        >
+        <div className="image">
           <div>
             <Image
               src={Leticia}
@@ -38,26 +32,20 @@ function About() {
             />
           </div>
         </div>
-        <div
-          className="about"
-          data-aos="fade-left"
-          data-aos-offset="500"
-          // data-aos-easing="ease-in-sine"
-          data-aos-mirror="true"
-        >
+        <div className="about">
           <TextContainer>
             <h3>Letícia Leal Moreira</h3>
             <p>
-              {/* <Typical
-              loop={Infinity}
-              className="typical"
-              steps={[
-                'Front End Developer ✨',
-                4000,
-                'Back End Student 🧱',
-                4000,
-              ]}
-            /> */}
+              <Typical
+                loop={Infinity}
+                className="typical"
+                steps={[
+                  'Front End Developer ✨',
+                  4000,
+                  'Back End Student 🧱',
+                  4000,
+                ]}
+              />
             </p>
 
             <div className="buttons">
