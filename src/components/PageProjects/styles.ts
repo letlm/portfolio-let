@@ -37,15 +37,26 @@ export const Projects = styled.div`
   border-radius: 8px;
 
   background-color: ${({ theme }) => theme.colors.detailsFour};
-  /* border: 2px solid ${({ theme }) => theme.colors.detailsFour}; */
+
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   transition: 0.5s;
 
   :hover {
     box-shadow: 10px 10px 9px -2px rgb(252, 98, 153);
-    /* border: 2px solid ${({ theme }) => theme.colors.detailsOne}; */
+  }
+
+  .level {
+    background-color: ${({ theme }) => theme.colors.textFour};
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 5px;
   }
 `;
 

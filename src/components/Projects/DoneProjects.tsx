@@ -1,6 +1,5 @@
 import { DoneProject, Project } from './styles';
 import Link from 'next/link';
-import { ReactNode } from 'react';
 
 interface DoneProjects {
   title: string;
@@ -8,11 +7,13 @@ interface DoneProjects {
   img: string;
   repo: string;
   demo: string;
+  stack: string;
 }
 
-function DoneProjects({ title, techs, img, repo, demo }: DoneProjects) {
+function DoneProjects({ title, techs, img, repo, demo, stack }: DoneProjects) {
   return (
     <DoneProject>
+      <p className="stack">{stack}</p>
       <div className="text">
         <h1>{title}</h1>
         <span>{techs}</span>

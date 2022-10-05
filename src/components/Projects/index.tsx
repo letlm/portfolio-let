@@ -11,6 +11,15 @@ function Projects() {
 
       <section data-aos="flip-left" data-aos-duration="1000">
         <DoneProjects
+          stack="back-end"
+          img="https://i.imgur.com/xOEdmGH.png"
+          title="KMDB"
+          techs="Gerenciar usuários, filmes e reviews"
+          repo="https://github.com/letlm/kmdb-python"
+          demo="https://github.com/letlm/kmdb-python"
+        />
+        <DoneProjects
+          stack="front-end"
           img="https://i.imgur.com/BMOqmxH.png"
           title="KenzieHub"
           techs="Gerenciamento de estudos"
@@ -18,18 +27,12 @@ function Projects() {
           demo="https://kenzie-hub-letlm.vercel.app/"
         />
         <DoneProjects
+          stack="front-end"
           img="https://i.imgur.com/5vrQjVV.png"
           title="BurguerKenzie"
           techs="Simulação de hamburgueria"
           repo="https://github.com/letlm/kenzieBurguer-REACT"
           demo="https://kenzie-burguer-letlm.vercel.app/"
-        />
-        <DoneProjects
-          img="https://i.imgur.com/psgkvHk.png"
-          title="NuKenzie"
-          techs="Gerenciamento de despesas"
-          repo="https://github.com/letlm/nukenzie-REACT"
-          demo="https://nu-kenzie-letlm.vercel.app/"
         />
       </section>
 

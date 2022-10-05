@@ -5,7 +5,6 @@ interface ImgProjects {
 }
 
 export const Container = styled.div`
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +52,6 @@ export const Container = styled.div`
 
       @media (max-width: 600px) {
         margin-top: -30px;
-        /* margin-bottom: -100px; */
       }
     }
 
@@ -114,6 +112,16 @@ export const DoneProject = styled.div`
   :hover {
     border-color: ${({ theme }) => theme.colors.textOne};
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .stack {
+    text-align: center;
+    padding: 2px;
+    width: 35%;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+    background-color: ${({ theme }) => theme.colors.textOne};
   }
 
   .infos {

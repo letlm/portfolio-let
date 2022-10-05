@@ -12,6 +12,7 @@ function Projects() {
         {projects.map((project, index) => (
           <PageProjects
             key={index}
+            level={project.level}
             title={project.title}
             img={project.img}
             tags={project.tags}

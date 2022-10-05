@@ -7,6 +7,7 @@ interface IPageProjectsProps {
   repo: string;
   demo: string;
   description: string;
+  level: string;
 }
 
 function PageProjects({
@@ -16,11 +17,13 @@ function PageProjects({
   repo,
   demo,
   description,
+  level,
 }: IPageProjectsProps) {
   return (
     <Container>
       <Context>
         <Projects>
+          <span className="level">{level}</span>
           <Figure>
             <div id="efect">
               <img src={img} className="image" />
